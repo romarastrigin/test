@@ -31,7 +31,6 @@ body {
 
 .animation-icon {
     border-radius: 5px;
-    transition: background-color 0.5s, box-shadow 0.5s, stroke 0.5s;
 }
 
 .animation-icon:focus {
@@ -43,17 +42,12 @@ body {
     background-color: $orange-900;
 }
 
-.animation-icon:hover.user-nav__link path {
+.animation-icon:hover.user-nav__btn path {
     stroke: #fff;
 }
 
-.animation-icon:hover.user-nav__link ellipse {
+.animation-icon:hover.user-nav__btn ellipse {
     stroke: #fff;
-}
-
-.user-nav__num:hover {
-    background-color: #fff;
-    color: $orange-900;
 }
 
 .animation-icon:active {
@@ -61,12 +55,17 @@ body {
     box-shadow: none;
 }
 
-.animation-icon:active.user-nav__link path {
+.animation-icon:active.user-nav__btn path {
     stroke: $dark-blue-900;
 }
 
-.animation-icon:active.user-nav__link ellipse {
+.animation-icon:active.user-nav__btn ellipse {
     stroke: $dark-blue-900;
+}
+
+.user-nav__animation-num:hover span {
+    background-color: #fff;
+    color: $orange-900;
 }
 
 .animation-btn:focus {
@@ -90,6 +89,7 @@ body {
 .animation-link:focus {
     box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .animation-link:hover {
@@ -139,12 +139,6 @@ body {
 
 .categories__name.mixitup-control-active path {
     fill: #fff;
-}
-
-.animation-facebook:focus {
-    background: #FFF2ED;
-    box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
-    border-radius: 50%;
 }
 
 .title {
